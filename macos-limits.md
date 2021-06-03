@@ -1,6 +1,6 @@
-# Hardware Limitations
+# Các hạn chế về phần cứng
 
-With macOS, there are numerous hardware limitations you need to be aware of before stepping foot into an installation. This is due to the limited amount of hardware Apple supports, so we're either limited by Apple or what patches the community has created.
+Với macOS, có rất nhiều hạn chế về phần cứng mà bạn cần nhận biết trước khi bước chân vào phần cài đặt. Đấy là do có số lượng hạn chế về phần cứng được Apple hỗ trợ, so we're either limited by Apple or what patches the community has created.
 
 The main hardware sections to verify are:
 
@@ -25,7 +25,7 @@ And for more detailed guides on the subject, see here:
 
 For CPU support, we have the following breakdown:
 
-* Cả 32 và 64-bit CPUs đều được hỗ trợ
+* Cả CPU 32 và 64-bit đều được hỗ trợ
   * This however requires the OS to support your architecture, see CPU Requirements section below
 * Intel's Desktop CPUs are supported.
   * Từ Yonah đến Comet Lake đều được hỗ trợ trong guide này.
@@ -33,7 +33,7 @@ For CPU support, we have the following breakdown:
   * Từ Nehalem đến Cascade Lake X đều được hỗ trợ trong guide này.
 * Intel's Core "i" and Xeon series laptop CPUs
   * Từ Arrendale đến Ice Lake đều được hỗ trợ trong guide này.
-  * Chú ý rằng Mobile Atoms, Celeron và Pentium CPUs đều không được hỗ trợ.
+  * Chú ý rằng các CPU di động Atoms, Celeron và Pentium đều không được hỗ trợ.
 * AMD's Desktop Bulldozer (15h), Jaguar (16h) and Ryzen (17h) CPUs
   * Laptop CPUs đều **KHÔNG ĐƯỢC** hỗ trợ
   * Chú ý rằng không phải tất cả tính năng của macOS đều được hỗ trợ trên AMD, xem bên dưới
@@ -42,7 +42,7 @@ For CPU support, we have the following breakdown:
 
 ::: details CPU Requirements
 
-Architecture Requirements
+Yêu cầu về bộ hướng dẫn
 
 * 32-bit CPUs đều được hỗ trợ từ 10.4.1 đến 10.6.8
   * Chú ý rằng 10.7.x requires 64-bit userspace, limiting 32-bit CPUs to 10.6
