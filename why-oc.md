@@ -8,10 +8,10 @@ Phần này tóm tắt ngắn gọn về lý do tại sao cộng đồng lại c
   * Kext injection
 * [Khiếm khuyết của OpenCore](#khiem-khuyet-cua-opencore)
 * [Lầm tưởng chung](#common-myths)
-  * Có phải OpenCore không ổn định vì nó là bản không?
+  * Có phải OpenCore không ổn định vì nó là bản beta?
   * Có phải OpenCore luôn inject SMBIOS và ACPI vào các hệ điều hành (OSes) khác phải không?
   * Có phải OpenCore yêu cầu phải cài mới, cài vanilla không?
-  * Có OpenCore chỉ hỗ trợ rất ít phiên bản (versions) macOS?
+  * Có phải OpenCore chỉ hỗ trợ rất ít phiên bản (versions) macOS?
 
 ## Tính năng của OpenCore
 
@@ -42,7 +42,7 @@ Phần này tóm tắt ngắn gọn về lý do tại sao cộng đồng lại c
   * [FileVault support](https://github.com/acidanthera/AppleSupportPkg)
   * [Firmware patches](https://github.com/acidanthera/AptioFixPkg)
 * [AMD OSX patches](https://github.com/AMD-OSX/AMD_Vanilla/tree/opencore):
-  * Bạn đang sử máy chạy AMD? The kernel patches phục vụ việc boot macOS không còn hỗ trợ Clover – chúng chỉ còn hỗ trợ OpenCore.
+  * Bạn đang sử máy chạy AMD? Kernel patches phục vụ việc boot macOS không còn hỗ trợ Clover – chúng chỉ còn hỗ trợ OpenCore.
 
 ## Kext Injection
 
@@ -101,23 +101,23 @@ Hầu hết các Clover's functionality is actually supported in OpenCore in the
 
 # Common Myths
 
-## Is OpenCore unstable as it's a beta
+## Có phải OpenCore không ổn định vì nó là bản beta?
 
-Short Answer: No
+Câu trả lời ngắn: Không
 
-Long Answer: No
+Câu trả lời dài: Không
 
-OpenCore's version number does not represent the quality of the project. Instead, it's more of a way to see the stepping stones of the project. Acidanthera still has much they'd like to do with the project including overall refinement and more feature support.
+Số phiên bản của OpenCore không tái hiện chất lượng của dự án. Thay vào đó, it's more of a way to see the stepping stones of the project. Acidanthera still has much they'd like to do with the project including overall refinement and more feature support.
 
 For example, OpenCore goes through proper security audits to ensure it complies with UEFI Secure Boot, and is the only Hackintosh bootloader to undergo these rigorous reviews and have such support.
 
-Version 0.6.1 was originally designed to be the official release of OpenCore as it would have proper UEFI/Apple Secure Boot, and would be the 1 year anniversary of OpenCore's release as a public tool. However, due to circumstances around macOS Big Sur and the rewriting of OpenCore's prelinker to support it, it was decided to push off 1.0.0 for another year.
+Phiên bản 0.6.1 vốn dĩ được thiết kê là bản ra mắt chính thức OpenCore vì nó có UEFI/Apple Secure Boot ổn định, và đánh dấu tròn 1 năm OpenCore được ra mắt như là bộ công cụ công khai. However, due to circumstances around macOS Big Sur and the rewriting of OpenCore's prelinker to support it, it was decided to push off 1.0.0 for another year.
 
-Current road map:
+Bản đồ các giai đoạn:
 
-* 2019: Year of Beta
-* 2020: Year of Secure Boot
-* 2021: Year of Refinement
+* 2019: Năm của Beta
+* 2020: Năm của Secure Boot
+* 2021: Năm của sự sàng lọc
 
 So please do not see the version number as a hindrance, instead as something to look forward to.
 
@@ -140,9 +140,9 @@ Special note for Clover users: please reset your NVRAM when installing with Open
 
 * Note: Thinkpad laptops are known to be semi-bricked after an NVRAM reset in OpenCore, we recommend resetting NVRAM by updating the BIOS on these machines.
 
-## Does OpenCore only support limited versions of macOS
+## Có phải OpenCore chỉ hỗ trợ rất ít phiên bản (versions) macOS?
 
-As of OpenCore 0.6.2, you can now boot every Intel version of macOS going all the way back to OS X 10.4! Proper support however will depend on your hardware, so please verify yourself: [Hardware Limitations](macos-limits.md)
+Bắt đầu từ phiên bản OpenCore 0.6.2, bạn có thể khởi động bất kỳ phiên bản Intel của macOS cho đến phiên bản OS X 10.4! Sự hỗ trợ thích hợp tuy nhiên sẽ tuỳ vào phần cứng của bạn, nên hãy tự xác nhận: [Hardware Limitations](macos-limits.md)
 
 ::: details macOS Install Gallery
 
